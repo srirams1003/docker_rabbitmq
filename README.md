@@ -1,16 +1,17 @@
-### Instructions to install RabbitMQ on Ubuntu 22.04
+### Instructions
 
-- `chmod +x install_rabbit.sh`
-- Run the script `./install_rabbit.sh`
+- `chmod +x clean_containers.sh setup.sh run_docker_rabbitmq.sh`
 
-  <hr>
-
-### NOTE: In the installation logs in the console, you will see some messages like:
-`E: Failed to fetch ...` or `E: Some index files failed to download ...`
-#### You can safely ignore these errors.
+- Run the script `./run_docker_rabbitmq.sh`
 
 <hr>
 
+- Once the set up is finished, run this command on two separate terminal tab/window(s), one for `send.cpp` and one for `receive.cpp`:
+  - `docker exec -it debian_container bash -c "cd /usr/src/app && exec /bin/bash"`
+
+- Now you can run `./send` on one terminal and `./receive` on the other.
+
+<!-- 
 ### OPTIONAL: Once installed successfully, you can use the commands below to check out the current status of your rabbitmq
 
 - `systemctl status rabbitmq-server`
@@ -26,4 +27,4 @@
 ### Now that installation was successful, you can run your Python Files
 
 - In one terminal, run: `python3 receive.py`
-- In another terminal, run: `python3 send.py`
+- In another terminal, run: `python3 send.py` -->
