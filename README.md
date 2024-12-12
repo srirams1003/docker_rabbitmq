@@ -28,3 +28,8 @@
 
 - In one terminal, run: `python3 receive.py`
 - In another terminal, run: `python3 send.py` -->
+
+
+<hr>
+
+- Run `./clean_containers.sh` to remove both the running containers.
