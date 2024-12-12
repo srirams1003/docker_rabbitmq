@@ -11,7 +11,6 @@
 
 - Now you can run `./send` on one terminal and `./receive` on the other.
 
-<!-- 
 ### OPTIONAL: Once installed successfully, you can use the commands below to check out the current status of your rabbitmq
 
 - `systemctl status rabbitmq-server`
@@ -24,10 +23,11 @@
 
 <hr>
 
+## DELETE THIS SECTION EVENTUALLY CUZ WE ARE NOT USING PYTHON
 ### Now that installation was successful, you can run your Python Files
 
 - In one terminal, run: `python3 receive.py`
-- In another terminal, run: `python3 send.py` -->
+- In another terminal, run: `python3 send.py`
 
 
 <hr>
