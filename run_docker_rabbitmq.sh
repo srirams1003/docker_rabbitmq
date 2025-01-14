@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Bring up the Docker containers
-docker-compose up -d
+docker compose up -d
 
 # Wait for RabbitMQ container to be ready
 echo "Waiting for RabbitMQ to start..."
